@@ -1,2 +1,1 @@
-FROM pytorch/pytorch:1.9.0-cuda11.1-cudnn8-devel
-RUN pip install opencv-python
+FROM pytorch/pytorch:1.12.1-cuda11.3-cudnn8-devel
