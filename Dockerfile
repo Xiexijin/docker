@@ -8,3 +8,4 @@ RUN pip install torchvision
 RUN pip install numpy
 RUN pip install timm
 RUN pip install matplotlib
+RUN apt update && apt install -y libgl1-mesa-glx libpci-dev curl nano psmisc
