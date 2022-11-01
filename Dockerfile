@@ -17,6 +17,13 @@ RUN pip install sphinxcontrib-jsmath==1.0.1
 RUN pip install sphinxcontrib-qthelp==1.0.3
 RUN pip install sphinxcontrib-serializinghtml==1.1.4
 RUN pip install tensorboardx==1.7
-RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+
+RUN rm /etc/apt/sources.list.d/cuda.list
+RUN rm /etc/apt/sources.list.d/nvidia-ml.list
+RUN apt-key del 7fa2af80
+RUN apt-get update && apt-get install -y --no-install-recommends wget
+RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-keyring_1.0-1_all.deb
+RUN dpkg -i cuda-keyring_1.0-1_all.deb
+
 RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc  
 
