@@ -17,5 +17,5 @@ RUN pip install sphinxcontrib-jsmath==1.0.1
 RUN pip install sphinxcontrib-qthelp==1.0.3
 RUN pip install sphinxcontrib-serializinghtml==1.1.4
 RUN pip install tensorboardx==1.7
-RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psnisc 
+RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc 
 
