@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.9.0-cuda10.2-cudnn7-devel
+FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
 RUN pip install argcomplete==1.10.0
 RUN pip install colour-demosaicing==0.1.5
 RUN pip install colour-science==0.3.15
