@@ -11,7 +11,7 @@ RUN pip install rstcheck==3.3.1
 RUN pip install sphinx==3.0.3
 RUN pip install sphinx-rtd-theme==0.4.3
 RUN pip install sphinxcontrib-applehelp==1.0.2
-RUN pip install- sphinxcontrib-devhelp==1.0.2
+RUN pip install sphinxcontrib-devhelp==1.0.2
 RUN pip install sphinxcontrib-htmlhelp==1.0.3
 RUN pip install sphinxcontrib-jsmath==1.0.1
 RUN pip install sphinxcontrib-qthelp==1.0.3
