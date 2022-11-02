@@ -1,5 +1,6 @@
 FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
 
+RUN pip install numpy==1.2.0
 RUN pip install argcomplete==1.10.0
 RUN pip install colour_demosaicing
 RUN pip install colour-science==0.3.15
