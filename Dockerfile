@@ -1,8 +1,8 @@
 FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
-RUN pip install anaconda_depends=2019.03=py36_0
-RUN pip install _libgcc_mutex=0.1=main
-RUN pip install absl-py=0.7.1=py36_0
-RUN pip install alabaster=0.7.12=py36_0
+RUN pip install anaconda_depends==2019.03
+RUN pip install _libgcc_mutex==0.1
+RUN pip install absl-py==0.7.1
+RUN pip install alabaster==0.7.12
 RUN pip install anaconda=custom=py36hbbc8b67_0
 RUN pip install anaconda-client=1.7.2=py36_0
 RUN pip install anaconda-project=0.8.2=py36_0
