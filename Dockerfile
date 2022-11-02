@@ -7,7 +7,7 @@ RUN pip install opencv-python==3.4.3.18
 RUN pip install matplotlib
 RUN pip install cupy==6.0.0
 RUN pip install sklearn
-RUN pip install libsm6
+
 RUN pip install easydict
 
 RUN rm /etc/apt/sources.list.d/cuda.list
