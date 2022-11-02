@@ -17,5 +17,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget
 RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-keyring_1.0-1_all.deb
 RUN dpkg -i cuda-keyring_1.0-1_all.deb
 
-RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc  
+RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc 
+RUN apt-get install libglib2.0-dev
 
