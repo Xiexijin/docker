@@ -3,16 +3,6 @@ FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
 RUN pip install argcomplete==1.10.0
 
 RUN pip install opencv-python==3.4.3.18
-RUN pip install pot==0.7.0
-RUN pip install rstcheck==3.3.1
-RUN pip install sphinx==3.0.3
-RUN pip install sphinx-rtd-theme==0.4.3
-RUN pip install sphinxcontrib-applehelp==1.0.2
-RUN pip install sphinxcontrib-devhelp==1.0.2
-RUN pip install sphinxcontrib-htmlhelp==1.0.3
-RUN pip install sphinxcontrib-jsmath==1.0.1
-RUN pip install sphinxcontrib-qthelp==1.0.3
-RUN pip install sphinxcontrib-serializinghtml==1.1.4
 RUN pip install tensorboardx==1.7
 
 RUN pip install matplotlib
