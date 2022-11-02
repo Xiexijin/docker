@@ -1,5 +1,5 @@
 FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
-RUN pip install anaconda_depends==2019.03
+RUN pip install anaconda_depends
 RUN pip install _libgcc_mutex==0.1
 RUN pip install absl-py==0.7.1
 RUN pip install alabaster==0.7.12
