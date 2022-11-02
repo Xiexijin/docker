@@ -9,6 +9,7 @@ RUN pip install cupy==6.0.0
 RUN pip install sklearn
 
 RUN pip install easydict
+RUN pip install tqdm==4.32.2
 
 RUN rm /etc/apt/sources.list.d/cuda.list
 RUN rm /etc/apt/sources.list.d/nvidia-ml.list
@@ -18,5 +19,8 @@ RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86
 RUN dpkg -i cuda-keyring_1.0-1_all.deb
 
 RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc 
-RUN apt-get install libglib2.0-dev
+RUN apt-get install libglib2.0-dev -y
+RUN apt-get install libsm6 -y
+RUN apt-get install libxrender1 -y
+RUN apt-get install libxext-dev -y
 
