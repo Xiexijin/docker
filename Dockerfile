@@ -3,7 +3,6 @@ FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
 RUN pip install argcomplete==1.10.0
 
 RUN pip install opencv-python==3.4.3.18
-RUN pip install tensorboardx==1.7
 
 RUN pip install matplotlib
 RUN pip install cupy==6.0.0
