@@ -29,6 +29,7 @@ RUN pip install sklearn
 
 RUN pip install easydict
 RUN pip install tqdm==4.32.2
+RUN pip install --ignore-install PyYAML
 
 RUN rm /etc/apt/sources.list.d/cuda.list
 RUN rm /etc/apt/sources.list.d/nvidia-ml.list
