@@ -50,7 +50,7 @@ RUN apt install make
 RUN apt install cmake -y
 RUN apt install libglew-dev cmake libboost-dev libboost-thread-dev libboost-filesystem-dev libeigen3-dev -y 
 RUN git clone https://github.com/stevenlovegrove/Pangolin.git
-RUN makdir build && cd build
+RUN mkdir build && cd build
 RUN cmake ..
 RUN make -j4
 RUN make install 
