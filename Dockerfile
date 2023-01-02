@@ -52,7 +52,7 @@ RUN apt install libglew-dev cmake libboost-dev libboost-thread-dev libboost-file
 
 RUN git clone https://github.com/stevenlovegrove/Pangolin.git && cd Pangolin && git checkout 7987c9b && mkdir build && cd build && cmake .. && make -j4 && make install 
 RUN git clone https://github.com/fmtlib/fmt.git && cd fmt && mkdir build && cd build && cmake .. && make -j4 && make install
-RUN git clone https://github.com/strasdat/Sophus.git && cd Sophus/ && mkdir build && cd build && cmake .. && make -j4 && sudo make install
+RUN git clone https://github.com/strasdat/Sophus.git && cd Sophus/ && git checkout a621ff && mkdir build && cd build && cmake .. && make -j4 && sudo make install
  
 
 
