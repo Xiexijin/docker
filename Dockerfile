@@ -49,16 +49,4 @@ RUN pip install scikit-image
 RUN apt install make 
 RUN apt install cmake -y
 RUN apt install libglew-dev cmake libboost-dev libboost-thread-dev libboost-filesystem-dev libeigen3-dev -y 
-RUN git clone https://github.com/stevenlovegrove/Pangolin.git
-RUN pwd
-RUN ls
-RUN cd Pangolin
-RUN pwd
-RUN ls
-RUN mkdir build && cd build
-RUN pwd
-RUN ls
-RUN cmake ..
-RUN make -j4
-RUN make install 
-
+RUN git clone https://github.com/stevenlovegrove/Pangolin.git && cd Pangolin && mkdir build && cd build && cmake .. && make -j4 && make install 
