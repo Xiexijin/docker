@@ -44,3 +44,14 @@ RUN apt-get install libsm6 -y
 RUN apt-get install libxrender1 -y
 RUN apt-get install libxext-dev -y
 
+RUN pip install scikit-image
+
+RUN apt install make 
+RUN apt install cmake
+RUN apt install libglew-dev cmake libboost-dev libboost-thread-dev libboost-filesystem-dev libeigen3-dev -y 
+RUN git clone https://github.com/stevenlovegrove/Pangolin.git
+RUN makdir build && cd build
+RUN cmake ..
+RUN make -j4
+RUN make install 
+
