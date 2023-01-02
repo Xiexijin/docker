@@ -52,6 +52,7 @@ RUN apt install libglew-dev cmake libboost-dev libboost-thread-dev libboost-file
 RUN git clone https://github.com/stevenlovegrove/Pangolin.git
 RUN cd Pangolin
 RUN mkdir build && cd build
+RUN pwd
 RUN cmake ..
 RUN make -j4
 RUN make install 
