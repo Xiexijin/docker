@@ -46,7 +46,7 @@ RUN apt-get install libxext-dev -y
 
 RUN pip install scikit-image
 
-RUN pip install --upgrade pip && pip install --user --upgrade
+RUN pip install --upgrade pip
 RUN apt-get install libfreetype6-dev gfortran
 RUN pip install matplotlib
 RUN pip install scipy
