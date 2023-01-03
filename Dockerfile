@@ -46,13 +46,19 @@ RUN apt-get install libxext-dev -y
 
 RUN pip install scikit-image
 
+RUN pip install --upgrade pip && pip install --user --upgrade
+RUN apt-get install libfreetype6-dev gfortran
+RUN pip install matplotlib
+RUN pip install scipy
+RUN git clone -b python2  https://github.com/MichaelGrupp/evo.git && cd evo && pip install --editable . --upgrade --no-binary evo
+
 RUN apt install make 
 RUN wget https://cmake.org/files/v3.10/cmake-3.10.0.tar.gz ; tar -zxf cmake*.tar.gz && cd cmake-3.10.0 && ./configure && make && make install 
-RUN apt install libglew-dev cmake libboost-dev libboost-thread-dev libboost-filesystem-dev libeigen3-dev -y 
 
-RUN git clone https://github.com/stevenlovegrove/Pangolin.git && cd Pangolin && git checkout 7987c9b && mkdir build && cd build && cmake .. && make -j4 && make install 
-RUN git clone https://github.com/fmtlib/fmt.git && cd fmt && mkdir build && cd build && cmake .. && make -j4 && make install
-RUN git clone https://github.com/strasdat/Sophus.git && cd Sophus/ && git checkout a621ff && mkdir build && cd build && cmake .. && make -j4 && make install
+# RUN apt install libglew-dev cmake libboost-dev libboost-thread-dev libboost-filesystem-dev libeigen3-dev -y 
+# RUN git clone https://github.com/stevenlovegrove/Pangolin.git && cd Pangolin && git checkout 7987c9b && mkdir build && cd build && cmake .. && make -j4 && make install 
+# RUN git clone https://github.com/fmtlib/fmt.git && cd fmt && mkdir build && cd build && cmake .. && make -j4 && make install
+# RUN git clone https://github.com/strasdat/Sophus.git && cd Sophus/ && git checkout a621ff && mkdir build && cd build && cmake .. && make -j4 && make install
  
 
 
