@@ -51,6 +51,9 @@ RUN apt-get install libfreetype6-dev gfortran -y
 RUN pip install matplotlib
 RUN pip install scipy
 RUN git clone -b python2  https://github.com/MichaelGrupp/evo.git && cd evo && pip install --editable . --upgrade --no-binary evo
+RUN apt install make 
+RUN apt install cmake
+RUN pip install scikit-learn
 
 # RUN apt install make 
 # RUN wget https://cmake.org/files/v3.10/cmake-3.10.0.tar.gz ; tar -zxf cmake*.tar.gz && cd cmake-3.10.0 && ./configure && make && make install 
