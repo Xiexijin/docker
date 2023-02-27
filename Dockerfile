@@ -8,5 +8,5 @@ RUN pip install joblib
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
 RUN apt-get update
 RUN apt-get install ffmpeg libsm6 libxext6 -y
-RUN pip install opencv-python
+RUN pip install opencv-python==3.4.3.18
 
