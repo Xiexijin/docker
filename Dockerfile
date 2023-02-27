@@ -2,6 +2,7 @@ FROM xiaolinghu/tensorflow1.1:latest
 RUN apt-key update
 RUN apt-get update
 RUN apt-get upgrade -y --allow-unauthenticated
+RUN easy_install pip==23.0.1
 # RUN pip install --upgrade pip
 RUN pip install scipy==1.2.1
 RUN pip install joblib
