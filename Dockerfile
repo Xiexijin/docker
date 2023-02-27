@@ -10,4 +10,4 @@ RUN apt-get update
 RUN apt-get upgrade -y --allow-unauthenticated
 RUN pip install scipy==1.2.1
 RUN pip install joblib
-RUN pip install opencv-python
+RUN pip install opencv-python==3.4.0
