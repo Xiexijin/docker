@@ -1,4 +1,5 @@
 FROM xiaolinghu/tensorflow1.1:latest
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
 RUN apt-key update
 RUN apt-get update
 RUN apt-get upgrade -y --allow-unauthenticated
