@@ -1,13 +1,9 @@
 # FROM pytorch/pytorch:1.8.1-cuda10.2-cudnn7-devel
 FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
-
-
-
+RUN pip install --upgrade pip
 RUN pip install tensorflow==1.14.0
 RUN pip install scipy==1.2.1
 RUN pip install joblib
-
-RUN pip install --upgrade pip
 RUN pip install numpy
 RUN pip install argcomplete==1.10.0
 RUN pip install colour_demosaicing
