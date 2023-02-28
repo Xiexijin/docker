@@ -1,21 +1,14 @@
-# FROM xiaolinghu/tensorflow1.1:latest
-# RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
-# RUN apt-key update
-# RUN apt-get update
-# RUN apt-get upgrade -y --allow-unauthenticated
-# RUN apt-get install wget
-# RUN wget https://bootstrap.pypa.io/pip/2.7/get-pip.py && python get-pip.py
-# RUN hash -r
-# RUN apt-get update
-# RUN apt-get upgrade -y --allow-unauthenticated
-# RUN pip install scipy==1.2.1
-# RUN pip install joblib
-# RUN pip install opencv-python==3.4.3.18
-
-FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
+FROM pytorch/pytorch:1.5.1-cuda10.1-cudnn7-devel
 
 RUN pip install --upgrade pip
-RUN pip install scipy==1.2.1
+RUN pip install imageio
+RUN pip install matplotlib
+RUN pip install scipy
+RUN pip install argparse
+RUN pip install tensorboardX
+RUN pip install blessings
+RUN pip install progressbar2
+RUN pip install path
 RUN pip install joblib
 RUN pip install numpy
 RUN pip install argcomplete==1.10.0
@@ -35,11 +28,9 @@ RUN pip install sphinxcontrib-htmlhelp==1.0.3
 RUN pip install sphinxcontrib-jsmath==1.0.1
 RUN pip install sphinxcontrib-qthelp==1.0.3
 RUN pip install sphinxcontrib-serializinghtml==1.1.4
-RUN pip install tensorboardx==1.7
 
 RUN pip install opencv-python==3.4.3.18
 
-RUN pip install matplotlib
 RUN pip install cupy==6.0.0
 RUN pip install sklearn
 
@@ -47,12 +38,8 @@ RUN pip install easydict
 RUN pip install tqdm==4.32.2
 RUN pip install --ignore-install PyYAML
 
-RUN rm /etc/apt/sources.list.d/cuda.list
-RUN rm /etc/apt/sources.list.d/nvidia-ml.list
 RUN apt-key del 7fa2af80
 RUN apt-get update && apt-get install -y --no-install-recommends wget
-RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-keyring_1.0-1_all.deb
-RUN dpkg -i cuda-keyring_1.0-1_all.deb
 
 RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc 
 RUN apt-get install libglib2.0-dev -y
@@ -69,13 +56,3 @@ RUN pip install matplotlib
 RUN git clone -b python2  https://github.com/MichaelGrupp/evo.git && cd evo && pip install --editable . --upgrade --no-binary evo
 RUN pip install scikit-learn
 
-RUN pip install tensorflow==1.3.0
-
-# RUN apt install make 
-# RUN wget https://cmake.org/files/v3.10/cmake-3.10.0.tar.gz ; tar -zxf cmake*.tar.gz && cd cmake-3.10.0 && ./configure && make && make install 
-
-# RUN apt install libglew-dev cmake libboost-dev libboost-thread-dev libboost-filesystem-dev libeigen3-dev -y 
-# RUN git clone https://github.com/stevenlovegrove/Pangolin.git && cd Pangolin && git checkout 7987c9b && mkdir build && cd build && cmake .. && make -j4 && make install 
-# RUN git clone https://github.com/fmtlib/fmt.git && cd fmt && mkdir build && cd build && cmake .. && make -j4 && make install
-# RUN git clone https://github.com/strasdat/Sophus.git && cd Sophus/ && git checkout a621ff && mkdir build && cd build && cmake .. && make -j4 && make install
- 
