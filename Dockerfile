@@ -39,6 +39,7 @@ RUN pip install --ignore-install PyYAML
 
 RUN apt-key del 7fa2af80
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F60F4B3D7FA2AF80
 RUN apt-get update && apt-get install -y --no-install-recommends wget
 
 RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc 
