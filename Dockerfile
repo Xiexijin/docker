@@ -1,5 +1,5 @@
 FROM pytorch/pytorch:1.5.1-cuda10.1-cudnn7-devel
-RUN apt-get git
+RUN apt install git
 RUN pip install --upgrade pip
 RUN pip install imageio
 RUN pip install matplotlib
