@@ -1,5 +1,5 @@
 FROM pytorch/pytorch:1.5.1-cuda10.1-cudnn7-devel
-RUN apt install git
+
 RUN pip install --upgrade pip
 RUN pip install imageio
 RUN pip install matplotlib
@@ -54,6 +54,5 @@ RUN pip install --upgrade pip
 RUN apt-get install libfreetype6-dev gfortran -y
 RUN pip install matplotlib
 
-RUN git clone -b python2  https://github.com/MichaelGrupp/evo.git && cd evo && pip install --editable . --upgrade --no-binary evo
 RUN pip install scikit-learn
 
