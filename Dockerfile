@@ -15,7 +15,6 @@
 FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
 
 RUN pip install --upgrade pip
-RUN pip install tensorflow==1.3.0
 RUN pip install scipy==1.2.1
 RUN pip install joblib
 RUN pip install numpy
@@ -69,6 +68,8 @@ RUN pip install matplotlib
 
 RUN git clone -b python2  https://github.com/MichaelGrupp/evo.git && cd evo && pip install --editable . --upgrade --no-binary evo
 RUN pip install scikit-learn
+
+RUN pip install tensorflow==1.3.0
 
 # RUN apt install make 
 # RUN wget https://cmake.org/files/v3.10/cmake-3.10.0.tar.gz ; tar -zxf cmake*.tar.gz && cd cmake-3.10.0 && ./configure && make && make install 
