@@ -32,7 +32,6 @@ RUN pip install sphinxcontrib-serializinghtml==1.1.4
 RUN pip install opencv-python==3.4.3.18
 
 RUN pip install cupy==6.0.0
-RUN pip install sklearn
 
 RUN pip install easydict
 RUN pip install tqdm==4.32.2
