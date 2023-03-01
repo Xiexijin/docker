@@ -55,4 +55,14 @@ RUN apt-get install libfreetype6-dev gfortran -y
 RUN pip install matplotlib
 
 RUN pip install scikit-learn
-
+RUN pip install evo
+RUN pip install imageio==2.5.0
+RUN pip install markdown==3.1.1
+RUN pip install matplotlib==3.1.1
+RUN pip install numpy==1.21.1
+RUN pip install path==15.0.0
+RUN pip install pebble==4.6.3
+RUN pip install scikit-image==0.15.0
+RUN pip install scikit-learn==0.24.1
+RUN pip install tensorboard==1.14.0
+RUN pip install tensorboardx==1.8
