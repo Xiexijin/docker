@@ -52,6 +52,11 @@ RUN pip install matplotlib
 RUN pip install scipy
 RUN git clone -b python2  https://github.com/MichaelGrupp/evo.git && cd evo && pip install --editable . --upgrade --no-binary evo
 RUN pip install scikit-learn
+RUN pip install imageio
+RUN pip install argparse
+RUN pip install blessings
+RUN pip install progressbar2
+RUN pip install path
 
 # RUN apt install make 
 # RUN wget https://cmake.org/files/v3.10/cmake-3.10.0.tar.gz ; tar -zxf cmake*.tar.gz && cd cmake-3.10.0 && ./configure && make && make install 
