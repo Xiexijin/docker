@@ -1,6 +1,7 @@
 FROM pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
 
 RUN pip install --upgrade pip
+RUN pip install --upgrade pip setuptools==45.2.0
 RUN pip install imageio
 RUN pip install matplotlib
 RUN pip install scipy
