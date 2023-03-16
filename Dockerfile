@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.8.1-cuda10.2-cudnn7-devel
+FROM pytorch/pytorch:1.8.1-cuda10.2-cudnn7-runtime
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools==58.2.0
