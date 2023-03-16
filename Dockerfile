@@ -68,4 +68,5 @@ RUN pip install tensorboard==1.14.0
 RUN pip install tensorboardx==1.8
 RUN pip install torchvision
 RUN pip install pypng
+RUN pip install gcc
 RUN pip install spatial-correlation-sampler
