@@ -1,7 +1,7 @@
 FROM pytorch/pytorch:1.8.1-cuda10.2-cudnn7-devel
 
 RUN pip install --upgrade pip
-RUN pip install --upgrade setuptools
+RUN pip install --upgrade setuptools==58.2.0
 RUN pip install torchvision
 RUN pip install pypng
 RUN pip install spatial-correlation-sampler
