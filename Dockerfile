@@ -2,7 +2,6 @@ FROM pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
-RUN pip uninstall torch
 RUN pip install torch
 RUN pip install torchvision
 RUN pip install pypng
