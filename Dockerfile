@@ -30,7 +30,7 @@ RUN pip install sphinxcontrib-qthelp==1.0.3
 RUN pip install sphinxcontrib-serializinghtml==1.1.4
 RUN pip install torchvision
 RUN pip install pypng
-RUN pip install gcc
+RUN pip install gcc-c++
 RUN pip install spatial-correlation-sampler
 
 RUN pip install opencv-python==3.4.3.18
