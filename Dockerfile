@@ -28,6 +28,10 @@ RUN pip install sphinxcontrib-htmlhelp==1.0.3
 RUN pip install sphinxcontrib-jsmath==1.0.1
 RUN pip install sphinxcontrib-qthelp==1.0.3
 RUN pip install sphinxcontrib-serializinghtml==1.1.4
+RUN pip install torchvision
+RUN pip install pypng
+RUN pip install gcc
+RUN pip install spatial-correlation-sampler
 
 RUN pip install opencv-python==3.4.3.18
 
@@ -58,7 +62,6 @@ RUN pip install scikit-learn
 RUN pip install evo
 RUN pip install imageio==2.5.0
 RUN pip install markdown==3.1.1
-RUN pip install matplotlib==3.1.1
 RUN pip install numpy==1.21.1
 RUN pip install path==15.0.0
 RUN pip install pebble==4.6.3
@@ -66,7 +69,4 @@ RUN pip install scikit-image==0.15.0
 RUN pip install scikit-learn==0.24.1
 RUN pip install tensorboard==1.14.0
 RUN pip install tensorboardx==1.8
-RUN pip install torchvision
-RUN pip install pypng
-RUN pip install gcc
-RUN pip install spatial-correlation-sampler
+
