@@ -46,6 +46,20 @@ RUN apt-get install libxext-dev -y
 
 RUN pip install scikit-image
 
+
+RUN rm /etc/apt/sources.list.d/cuda.list
+RUN rm /etc/apt/sources.list.d/nvidia-ml.list
+RUN apt-key del 7fa2af80
+RUN apt-get update && apt-get install -y --no-install-recommends wget
+RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-keyring_1.0-1_all.deb
+RUN dpkg -i cuda-keyring_1.0-1_all.deb
+
+RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc 
+RUN apt-get install libglib2.0-dev -y
+RUN apt-get install libsm6 -y
+RUN apt-get install libxrender1 -y
+RUN apt-get install libxext-dev -y
+
 RUN pip install --upgrade pip
 RUN apt-get install libfreetype6-dev gfortran -y
 RUN pip install matplotlib
