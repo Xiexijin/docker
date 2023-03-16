@@ -5,7 +5,7 @@ RUN pip install --upgrade setuptools
 RUN pip install torch
 RUN pip install torchvision
 RUN pip install pypng
-# RUN pip install spatial-correlation-sampler
+RUN pip install spatial-correlation-sampler
 RUN pip install imageio
 RUN pip install matplotlib
 RUN pip install scipy
