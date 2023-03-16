@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.1.0-cuda10.0-cudnn7.5-devel
+FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
