@@ -1,11 +1,10 @@
-FROM pytorch/pytorch:0.4.1-cuda9-cudnn7-devel
+FROM pytorch/pytorch:1.9.0-cuda10.2-cudnn7-devel
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install torch
 RUN pip install torchvision
 RUN pip install pypng
-RUN apt install build-essential
 RUN pip install spatial-correlation-sampler
 RUN pip install imageio
 RUN pip install matplotlib
