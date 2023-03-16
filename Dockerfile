@@ -1,7 +1,10 @@
 FROM pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
 
 RUN pip install --upgrade pip
-RUN pip install --upgrade pip setuptools==45.2.0
+RUN pip install --upgrade setuptools
+RUN pip install torchvision
+RUN pip install pypng
+RUN pip install spatial-correlation-sampler
 RUN pip install imageio
 RUN pip install matplotlib
 RUN pip install scipy
@@ -67,6 +70,4 @@ RUN pip install scikit-image==0.15.0
 RUN pip install scikit-learn==0.24.1
 RUN pip install tensorboard==1.14.0
 RUN pip install tensorboardx==1.8
-RUN pip install torchvision
-RUN pip install pypng
-RUN pip install spatial-correlation-sampler
+
