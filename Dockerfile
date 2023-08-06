@@ -26,7 +26,7 @@ RUN pip install Pillow==5.4.1
 RUN pip install progressbar2==3.39.3
 RUN pip install protobuf==3.7.0
 RUN pip install python-utils==2.3.0
-RUN pip install PyYAML==5.1
+# RUN pip install PyYAML==5.1
 RUN pip install requests==2.21.0
 RUN pip install scipy==1.2.1
 RUN pip install setproctitle==1.1.10
