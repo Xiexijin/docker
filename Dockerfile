@@ -20,7 +20,7 @@ RUN pip install MarkupSafe==1.1.1
 RUN pip install matplotlib
 RUN pip install networkx==2.2
 RUN pip install numpy==1.16.2
-RUN pip install opencv-python
+RUN pip install opencv-python==4.8.0.74
 RUN pip install packaging
 RUN pip install pandas
 RUN pip install Pillow==5.4.1
