@@ -1,7 +1,7 @@
 FROM pytorch/pytorch:1.0.1-cuda10.0-cudnn7-devel
 RUN pip install --upgrade pip
 RUN pip install ai2thor==1.0.1
-RUN pip install certifi==2019.3.9
+# RUN pip install certifi==2019.3.9
 RUN pip install cffi
 RUN pip install chardet==3.0.4
 RUN pip install Click==7.0
