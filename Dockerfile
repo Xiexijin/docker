@@ -20,7 +20,6 @@ RUN pip install MarkupSafe==1.1.1
 RUN pip install matplotlib
 RUN pip install networkx==2.2
 RUN pip install numpy==1.16.2
-RUN pip install opencv-python==4.8.0.74
 RUN pip install packaging
 RUN pip install pandas
 RUN pip install Pillow==5.4.1
@@ -40,3 +39,4 @@ RUN pip install torchvision==0.2.2.post3
 RUN pip install tqdm==4.31.1
 RUN pip install urllib3==1.24.2
 RUN pip install Werkzeug==0.15.3
+RUN pip install opencv-python==4.8.0.74
