@@ -4,7 +4,7 @@ RUN pip install ai2thor==5.0.0
 RUN pip install appdirs==1.4.4
 RUN pip install attrs==22.1.0
 RUN pip install aws-requests-auth==0.4.3
-RUN apt-get install git
+RUN apt-get install git -y
 RUN pip install babyai  git+https://github.com/Lucaweihs/babyai.git@0b450eeb3a2dc7116c67900d51391986bdbb84cd
 RUN pip install blinker==1.6.2
 RUN pip install blosc==1.11.1
