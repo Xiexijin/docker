@@ -1,42 +1,92 @@
-FROM pytorch/pytorch:1.0.1-cuda10.0-cudnn7-devel
-RUN pip install --upgrade pip
-RUN pip install ai2thor
-# RUN pip install certifi==2019.3.9
-RUN pip install cffi
-RUN pip install chardet==3.0.4
-RUN pip install Click==7.0
-RUN pip install cryptography
-RUN pip install cycler
-RUN pip install decorator==4.4.0
-RUN pip install Deprecated
-RUN pip install Flask==1.0.2
-RUN pip install fonttools
-RUN pip install h5py==2.9.0
-RUN pip install idna==2.8
-RUN pip install itsdangerous==1.1.0
-RUN pip install Jinja2==2.10
-RUN pip install kiwisolver
-RUN pip install MarkupSafe==1.1.1
-RUN pip install matplotlib
-RUN pip install networkx==2.2
-RUN pip install numpy==1.16.2
-RUN pip install packaging
-RUN pip install pandas
-RUN pip install Pillow==5.4.1
-RUN pip install progressbar2==3.39.3
-RUN pip install protobuf==3.7.0
-RUN pip install python-utils==2.3.0
-# RUN pip install PyYAML==5.1
-RUN pip install requests==2.21.0
-RUN pip install scipy==1.2.1
-RUN pip install setproctitle==1.1.10
-RUN pip install setuptools
-RUN pip install six==1.12.0
-RUN pip install tabulate==0.8.3
-RUN pip install tensorboardX==1.6
-RUN pip install torch==1.0.1
-RUN pip install torchvision==0.2.2.post3
-RUN pip install tqdm==4.31.1
-RUN pip install urllib3==1.24.2
-RUN pip install Werkzeug==0.15.3
-RUN pip install opencv-python==4.3.0.38
+FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-devel
+RUN pip install ai2thor==5.0.0
+appdirs==1.4.4
+attrs==22.1.0
+aws-requests-auth==0.4.3
+babyai  git+https://github.com/Lucaweihs/babyai.git@0b450eeb3a2dc7116c67900d51391986bdbb84cd
+blinker==1.6.2
+blosc==1.11.1
+botocore==1.31.20
+brotlipy==0.7.0
+certifi==2023.7.22
+cffi==1.15.1
+chardet==4.0.0
+charset-normalizer==2.0.4
+click==8.1.6
+clip  git+https://github.com/openai/clip@e184f608c5d5e58165682f7c332c3a8b4c1545f2#egg=clip
+cloudpickle==1.3.0
+compress-pickle==2.1.0
+contourpy==1.0.5
+cryptography==41.0.2
+cycler==0.10.0
+decorator==4.4.2
+filelock==3.0.12
+Flask==2.3.2
+fonttools==4.25.0
+ftfy==6.1.1
+future==0.18.2
+gmpy2==2.1.2
+gym==0.26.2
+gym-minigrid==1.2.2
+gym-notices==0.0.8
+idna==3.4
+imageio==2.9.0
+imageio-ffmpeg==0.4.8
+importlib-metadata==6.8.0
+importlib-resources==5.2.0
+itsdangerous==2.1.2
+Jinja2==3.1.2
+jmespath==1.0.1
+kiwisolver==1.3.1
+MarkupSafe==2.1.1
+matplotlib==3.7.1
+mkl-fft==1.3.1
+mkl-random==1.2.2
+mkl-service==2.4.0
+moviepy==1.0.3
+mpmath==1.3.0
+msgpack==1.0.5
+munkres==1.1.4
+networkx==3.1
+numpy==1.20.3
+numpy-quaternion==2022.4.3
+olefile==0.46
+opencv-python==4.8.0.74
+packaging==23.0
+Pillow==8.2.0
+pip==23.2.1
+pooch==1.4.0
+proglog==0.1.9
+progressbar2==4.2.0
+protobuf==3.20.3
+pycparser==2.21
+pyglet==1.5.0
+pyOpenSSL==23.2.0
+pyparsing==3.0.9
+PyQt5==5.12.3
+PyQt5_sip==4.19.18
+PyQtChart==5.12
+PyQtWebEngine==5.12.1
+PySocks==1.7.1
+python-dateutil==2.8.2
+python-utils==3.7.0
+python-xlib==0.33
+PyYAML==6.0.1
+regex==2023.6.3
+requests==2.31.0
+scipy==1.10.1
+setproctitle==1.2.2
+setuptools==68.0.0
+six==1.16.0
+sympy==1.11.1
+tensorboardX==2.2
+torch==2.0.1
+torchvision==0.15.2
+tornado==6.3.2
+tqdm==4.65.0
+typing_extensions==4.7.1
+urllib3==1.26.16
+wcwidth==0.2.6
+Werkzeug==2.3.6
+wheel==0.37.1
+zipp==3.11.0
