@@ -42,7 +42,7 @@ RUN pip install jmespath==1.0.1
 RUN pip install kiwisolver==1.3.1
 RUN pip install MarkupSafe==2.1.1
 RUN pip install matplotlib==3.7.1
-RUN pip install mkl-fft==1.3.1
+RUN pip install mkl-fft
 RUN pip install mkl-random==1.2.2
 RUN pip install mkl-service==2.4.0
 RUN pip install moviepy==1.0.3
