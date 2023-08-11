@@ -5,8 +5,8 @@ RUN pip install appdirs==1.4.4
 RUN pip install attrs==22.1.0
 RUN pip install aws-requests-auth==0.4.3
 RUN apt-get install git -y
-RUN pip install clip  git+https://github.com/openai/clip@e184f608c5d5e58165682f7c332c3a8b4c1545f2#egg=clip
-RUN pip install babyai==0.1.0  git+https://github.com/Lucaweihs/babyai.git@0b450eeb3a2dc7116c67900d51391986bdbb84cd
+# RUN pip install clip  git+https://github.com/openai/clip@e184f608c5d5e58165682f7c332c3a8b4c1545f2#egg=clip
+# RUN pip install babyai==0.1.0  git+https://github.com/Lucaweihs/babyai.git@0b450eeb3a2dc7116c67900d51391986bdbb84cd
 RUN pip install blinker==1.6.2
 RUN pip install blosc==1.11.1
 RUN pip install botocore==1.31.20
