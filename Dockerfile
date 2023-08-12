@@ -1,6 +1,6 @@
-FROM pytorch/pytorch:2.0.1-cuda12.2-cudnn8-devel
+FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-devel
 RUN apt-get update
-RUN pip install numpy==1.20.3
+RUN pip install numpy
 RUN pip install ai2thor==5.0.0
 RUN pip install appdirs==1.4.4
 RUN pip install attrs==22.1.0
