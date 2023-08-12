@@ -65,10 +65,10 @@ RUN pip install pycparser==2.21
 RUN pip install pyglet==1.5.0
 RUN pip install pyOpenSSL==23.2.0
 RUN pip install pyparsing==3.0.9
-RUN pip install PyQt5==5.12.3
-RUN pip install PyQt5_sip==4.19.18
-RUN pip install PyQtChart==5.12
-RUN pip install PyQtWebEngine==5.12.1
+RUN pip install PyQt5
+RUN pip install PyQt5_sip
+RUN pip install PyQtChart
+RUN pip install PyQtWebEngine
 RUN pip install PySocks==1.7.1
 RUN pip install python-dateutil==2.8.2
 RUN pip install python-utils==3.7.0
