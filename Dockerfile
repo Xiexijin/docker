@@ -1,5 +1,6 @@
 FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-devel
 RUN apt-get update
+RUN pip install numpy==1.20.3
 RUN pip install ai2thor==5.0.0
 RUN pip install appdirs==1.4.4
 RUN pip install attrs==22.1.0
@@ -50,7 +51,6 @@ RUN pip install mpmath==1.3.0
 RUN pip install msgpack==1.0.5
 RUN pip install munkres==1.1.4
 RUN pip install networkx==3.1
-RUN pip install numpy==1.20.3
 RUN pip install numpy-quaternion==2022.4.3
 RUN pip install olefile==0.46
 RUN pip install opencv-python==4.8.0.74
